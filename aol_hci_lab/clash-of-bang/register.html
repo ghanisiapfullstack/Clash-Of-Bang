@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clash of BaNG - Register</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <a href="index.html">CLASH OF BANG</a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="gallery.html">GALLERY</a></li>
+                    <li><a href="troops.html">TROOPS</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="register.html" class="btn-register active">REGISTER</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+
+        <section class="register-section">
+            <div class="register-card">
+
+                <div class="register-header">
+                    <h1>Join the Clan</h1>
+                    <p>Fill in your details below to become a member of the Clash of BaNG community.</p>
+                </div>
+
+                <form id="registerForm" novalidate>
+
+                    <div class="form-group">
+                        <label for="fullName">Full Name</label>
+                        <input type="text" id="fullName" name="fullName" placeholder="Enter your name" autocomplete="name">
+                        <span class="form-error" id="fullNameError"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" placeholder="Enter your email" autocomplete="email">
+                        <span class="form-error" id="emailError"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Gender</label>
+                        <div class="radio-group">
+                            <label class="radio-label">
+                                <input type="radio" name="gender" value="male">
+                                <span>Male</span>
+                            </label>
+                            <label class="radio-label">
+                                <input type="radio" name="gender" value="female">
+                                <span>Female</span>
+                            </label>
+                        </div>
+                        <span class="form-error" id="genderError"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="age">Member Age</label>
+                        <input type="number" id="age" name="age" placeholder="Enter your age" min="13" max="99">
+                        <span class="form-error" id="ageError"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="favTroop">Favorite Troop</label>
+                        <select id="favTroop" name="favTroop">
+                            <option value="">Select a troop</option>
+                            <option value="iron-fist">Iron Fist</option>
+                            <option value="archers">Archers</option>
+                            <option value="cavalry">Cavalry</option>
+                            <option value="swordsman">Swordsman</option>
+                            <option value="orc">Orc</option>
+                            <option value="spearman">Spearman</option>
+                            <option value="mighty-knight">Mighty Knight</option>
+                            <option value="axeman">Axeman</option>
+                        </select>
+                        <span class="form-error" id="favTroopError"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="reason">Reason to Join</label>
+                        <textarea id="reason" name="reason" rows="5" placeholder="Tell us why you want to join..."></textarea>
+                        <span class="form-error" id="reasonError"></span>
+                    </div>
+
+                    <button type="submit" class="btn-submit">REGISTER NOW</button>
+
+                </form>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="footer-inner">
+            <div class="footer-left">
+                <span class="footer-logo">CLASH OF BANG</span>
+                <div class="footer-links">
+                    <a href="#">PRIVACY POLICY</a>
+                    <a href="#">TERMS OF SERVICE</a>
+                    <a href="#">SUPPORT</a>
+                </div>
+            </div>
+            <div class="footer-right">
+                <p>&copy; 2026 CLASH OF BANG. ALL RIGHTS RESERVED.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/register.js"></script>
+</body>
+</html>
